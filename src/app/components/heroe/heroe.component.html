@@ -1,0 +1,35 @@
+<div class="container border border-dark mt-5">
+<div class="row">
+
+<div style="font-weight: bolder" class="col text-success text-center text-weight border-bottom border-success border-right border-success">
+       {{element.nombre}}    
+</div>
+
+<div style="font-weight: bolder" class="col text-danger border-bottom border-dark">
+Poderes
+
+</div>
+</div>
+
+<div class="row border-bottom border-dark ">
+<div class="col border-right border-dark d-flex justify-content-center">
+    <img [src]="'../../assets/img/'+element.img" alt="">
+</div>
+<div class="col d-flex justify-content-center align-items-center">
+<ul>
+    <li style="font-size:17px; font-weight: bold;" *ngFor="let poder of element.poderes">{{poder}}</li>
+
+</ul>
+</div>
+</div>
+
+<div class="row ">
+<div class="col border-right border-dark  d-flex justify-content-center"> <button (click)="verDetalles(element.id)" class=" btn-small">VER MAS</button></div>
+<div class="col"></div> 
+</div>
+
+
+
+
+
+</div>

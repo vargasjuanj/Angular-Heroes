@@ -4,16 +4,22 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
 
 import {ServicioService} from './services/servicio.service';
+import { MenuDeOpcionesComponent } from './components/menu-de-opciones/menu-de-opciones.component';
+import { HeroeComponent } from './components/heroe/heroe.component';
+import { ListaHeroesComponent } from './components/lista-heroes/lista-heroes.component';
+import { DetalleHeroeComponent } from './components/detalle-heroe/detalle-heroe.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    MenuDeOpcionesComponent,
+    HeroeComponent,
+    ListaHeroesComponent,
+    DetalleHeroeComponent
 
 
   ],
