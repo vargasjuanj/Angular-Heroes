@@ -15,7 +15,7 @@ datos:any= (data as any).default
   filtrarPorEmpresa(casa:string):Entidad[]{
 return this.datos.filter(element=>element.casa===casa)
   }
-porPoderes(poderes:any[],buscado:string){
+porPoderes(poderes:any[],buscado:string):boolean{
 for(let poder of poderes){
 if(poder.toLowerCase().includes(buscado)){
   return true;
